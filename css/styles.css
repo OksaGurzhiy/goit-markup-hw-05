@@ -144,7 +144,6 @@ a {
 .contacts a:focus,
 .logo-footer:hover,
 .logo-footer:focus {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--accent);
 }
 
@@ -223,8 +222,6 @@ a {
 
 .hero-button:hover,
 .hero-button:focus {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* color: #ffffff; */
   background-color: var(--accent);
 }
 
@@ -413,7 +410,6 @@ a {
 }
 .social-btn:hover,
 .social-btn:focus {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent);
 }
 
@@ -452,21 +448,19 @@ a {
   border-radius: 4px;
   color: var(--light-slate);
 }
+.customers-btn:hover,
+.customers-btn:focus {
+  color: var(--accent);
+}
 .customers-icons {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: currentColor;
   width: 104px;
   height: 56px;
 }
 
-.customers-btn:hover,
-.customers-btn:focus {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  color: var(--accent);
-}
-
 .customers-icons:hover,
 .customers-icons:focus {
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--accent);
 }
 
@@ -545,7 +539,6 @@ a {
 
 .footer-btn:hover,
 .footer-btn:focus {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent-footer);
 }
 
@@ -616,10 +609,6 @@ a {
 
 .filter-button:hover,
 .filter-button:focus {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
   background-color: var(--accent);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
@@ -651,7 +640,6 @@ a {
 }
 .portrfolio-link:hover,
 .portrfolio-link:focus {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -677,7 +665,6 @@ a {
 .portrfolio-link:hover .portfolio-overlay,
 .portrfolio-link:focus .portfolio-overlay {
   transform: translateY(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .thumb-text {
   font-size: 16px;
@@ -722,7 +709,8 @@ a {
 .backdrop {
   position: fixed;
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   top: 0;
   left: 0;
 
@@ -767,6 +755,7 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.1);
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .modal-img {
   display: block;
@@ -774,10 +763,8 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent);
 }
 .modal-btn:hover .modal-img {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #ffffff;
 }
